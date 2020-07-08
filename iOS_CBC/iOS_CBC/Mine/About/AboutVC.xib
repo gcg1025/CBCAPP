@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC">
+            <connections>
+                <outlet property="topCon" destination="0jC-au-vRR" id="GpF-pU-w57"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlw-7T-ubv">
+                    <rect key="frame" x="16" y="94" width="372" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">山西联知信息科技有限公司致力于打造全面权威的有色信息平台，努力为有色行业研究及从业者，提供全方位的数据信息服务和决策支持。
+
+本网从产品分类包括：七大基本金属、29项稀有金属、稀土及八大贵金属； 同时根据有色加工链对：金属矿、合金及废旧金属也进行专业系统的数据信息集成。
+
+即时的资讯跟踪，专业的数据统计 及时的价格行情，辅以可视化图表系统、专业地理GIS系统、 直观的CBC价格榜单、灵活的比价工具，都是希望能为您提供最优、最贴心的有色信息服务。
+
+平台开发出的报价平台和企业标注系统，开放交互的把您的企业通过WEB彼此联系，宣传展示您的产品、项目及任务活动。
+
+成为我们的尊贵会员，我们还将提供您更多便捷服务！
+
+
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="19" maximumLineHeight="19" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">©Copyright 2013~2020
+山西联知信息科技(cbcie.com)版权所有</string>
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="19" maximumLineHeight="19" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rlw-7T-ubv" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="0jC-au-vRR"/>
+                <constraint firstItem="rlw-7T-ubv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="KwA-Ao-29A"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rlw-7T-ubv" secondAttribute="bottom" id="NQg-RE-yeE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rlw-7T-ubv" secondAttribute="trailing" constant="26" id="Pho-oA-uat"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="145"/>
+        </view>
+    </objects>
+</document>

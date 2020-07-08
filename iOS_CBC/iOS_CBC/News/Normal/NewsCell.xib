@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="NewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题内容标题内容标题内容标题内容标题内容标题内容标题内容标题内容标题内容标题内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNI-3r-sEn">
+                        <rect key="frame" x="16" y="10" width="288" height="41"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBx-rr-nHn">
+                        <rect key="frame" x="16" y="80" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.1529411765" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻来源" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8f-EH-WsN">
+                        <rect key="frame" x="53" y="80" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dI3-ue-ia8">
+                        <rect key="frame" x="0.0" y="105.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="bw5-QI-CnG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dI3-ue-ia8" secondAttribute="trailing" id="2PP-dC-Ai1"/>
+                    <constraint firstItem="Z8f-EH-WsN" firstAttribute="leading" secondItem="uBx-rr-nHn" secondAttribute="trailing" constant="10" id="4ki-hk-eUt"/>
+                    <constraint firstAttribute="bottom" secondItem="dI3-ue-ia8" secondAttribute="bottom" id="BET-Si-vmP"/>
+                    <constraint firstItem="uBx-rr-nHn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="E0W-TA-fkN"/>
+                    <constraint firstAttribute="bottom" secondItem="Z8f-EH-WsN" secondAttribute="bottom" constant="10" id="Ld7-ua-a5y"/>
+                    <constraint firstItem="dI3-ue-ia8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TU4-xJ-qUD"/>
+                    <constraint firstAttribute="trailing" secondItem="UNI-3r-sEn" secondAttribute="trailing" constant="16" id="a2a-oE-MZn"/>
+                    <constraint firstItem="UNI-3r-sEn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hiL-xt-kh0"/>
+                    <constraint firstAttribute="bottom" secondItem="uBx-rr-nHn" secondAttribute="bottom" constant="10" id="m2S-id-usA"/>
+                    <constraint firstItem="UNI-3r-sEn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nUX-RZ-JNT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="sourceLab" destination="Z8f-EH-WsN" id="UPu-Wp-vGI"/>
+                <outlet property="timeLab" destination="uBx-rr-nHn" id="JfS-OC-yxP"/>
+                <outlet property="titleLab" destination="UNI-3r-sEn" id="gXf-Rj-AVs"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="160.04464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

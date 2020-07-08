@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXq-hQ-Mhp">
+                    <rect key="frame" x="157" y="433" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.32156862749999998" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="gyV-Sz-BKz"/>
+                        <constraint firstAttribute="height" constant="40" id="j8L-ie-ZVX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-cE-hFo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="QEq-qq-int" appends="YES" id="pup-TO-uHd"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前处于未登录状态，点击登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MO5-2J-aq2">
+                    <rect key="frame" x="92" y="308" width="230" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.14117647059999999" green="0.32156862749999998" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ncv-cE-hFo" secondAttribute="trailing" id="1HY-ri-6eb"/>
+                <constraint firstItem="MO5-2J-aq2" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.7" id="1eD-jf-Dtz"/>
+                <constraint firstItem="QXq-hQ-Mhp" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1qp-en-Hme"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ncv-cE-hFo" secondAttribute="bottom" id="43g-vX-Ovd"/>
+                <constraint firstItem="QXq-hQ-Mhp" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Fuj-oN-SNE"/>
+                <constraint firstItem="MO5-2J-aq2" firstAttribute="centerX" secondItem="QXq-hQ-Mhp" secondAttribute="centerX" id="Goh-Wb-M9M"/>
+                <constraint firstItem="Ncv-cE-hFo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NcG-fp-8jA"/>
+                <constraint firstItem="Ncv-cE-hFo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UjE-kp-SLz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+        <tapGestureRecognizer id="QEq-qq-int">
+            <connections>
+                <action selector="loginAct:" destination="iN0-l3-epB" id="U0J-FE-oOV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

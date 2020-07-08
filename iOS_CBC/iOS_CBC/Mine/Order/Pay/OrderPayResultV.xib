@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderPayResultV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qF7-g3-UMF">
+                    <rect key="frame" x="41.5" y="353" width="331" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非常抱歉支付失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBw-mO-SXD">
+                            <rect key="frame" x="84" y="30" width="163.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付异常，该订单已为您保留到“待支付”订单中，请尽快完成支付。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMr-Al-fG4">
+                            <rect key="frame" x="20" y="74" width="291" height="36"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhj-1U-KC6">
+                            <rect key="frame" x="115.5" y="150" width="100" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="uOS-YG-bbO"/>
+                                <constraint firstAttribute="width" constant="100" id="wqL-Bb-qHa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4z-yu-PWR">
+                            <rect key="frame" x="115.5" y="150" width="100" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="closeAct:" destination="iN0-l3-epB" eventType="touchUpInside" id="lVn-bu-GC9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="MBw-mO-SXD" firstAttribute="centerX" secondItem="qF7-g3-UMF" secondAttribute="centerX" id="TW2-Zz-o9q"/>
+                        <constraint firstAttribute="bottom" secondItem="Xhj-1U-KC6" secondAttribute="bottom" constant="20" id="Vlg-Ht-mEw"/>
+                        <constraint firstItem="k4z-yu-PWR" firstAttribute="centerX" secondItem="Xhj-1U-KC6" secondAttribute="centerX" id="X1a-WJ-13A"/>
+                        <constraint firstItem="fMr-Al-fG4" firstAttribute="centerX" secondItem="qF7-g3-UMF" secondAttribute="centerX" id="bV2-iI-eBN"/>
+                        <constraint firstItem="fMr-Al-fG4" firstAttribute="leading" secondItem="qF7-g3-UMF" secondAttribute="leading" constant="20" id="cGq-Yb-apU"/>
+                        <constraint firstItem="k4z-yu-PWR" firstAttribute="height" secondItem="Xhj-1U-KC6" secondAttribute="height" id="fdX-2r-KnW"/>
+                        <constraint firstItem="fMr-Al-fG4" firstAttribute="top" secondItem="MBw-mO-SXD" secondAttribute="bottom" constant="20" id="k2k-2I-Twf"/>
+                        <constraint firstItem="Xhj-1U-KC6" firstAttribute="centerX" secondItem="qF7-g3-UMF" secondAttribute="centerX" id="kWH-2b-Roi"/>
+                        <constraint firstItem="MBw-mO-SXD" firstAttribute="top" secondItem="qF7-g3-UMF" secondAttribute="top" constant="30" id="lkk-XG-nVG"/>
+                        <constraint firstAttribute="height" constant="200" id="oFN-Kr-thC"/>
+                        <constraint firstAttribute="trailing" secondItem="fMr-Al-fG4" secondAttribute="trailing" constant="20" id="rBT-rE-jIy"/>
+                        <constraint firstItem="k4z-yu-PWR" firstAttribute="centerY" secondItem="Xhj-1U-KC6" secondAttribute="centerY" id="uhS-tJ-9bo"/>
+                        <constraint firstItem="k4z-yu-PWR" firstAttribute="width" secondItem="Xhj-1U-KC6" secondAttribute="width" id="ySq-1T-eCI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qF7-g3-UMF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="cQZ-cd-ig2"/>
+                <constraint firstItem="qF7-g3-UMF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="owb-4b-jTF"/>
+                <constraint firstItem="qF7-g3-UMF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="s9g-4e-PlO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="120"/>
+        </view>
+    </objects>
+</document>
